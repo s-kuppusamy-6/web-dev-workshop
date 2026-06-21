@@ -1,0 +1,168 @@
+/*
+Brand Colors
+Primary: #3172AE  - Navigation bar, section headers, footer
+Secondary: #FFFFFF - Borders, cards, secondary text
+Background: #f3f3f3 - Website background
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #3172AE;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.course-title {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.hero-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+}
+
+.hero-content h2 {
+    color: #3172AE;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .title {
+    color: #666666;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Section Headings */
+
+.course-description,
+.resources {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.course-description h2,
+.resources h2 {
+    background-color: #3172AE;
+    color: #FFFFFF;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Description Card */
+
+.description-card {
+    background-color: #FFFFFF;
+    border-left: 6px solid #3172AE;
+    padding: 1.5rem;
+}
+
+.description-card p:first-child {
+    margin-bottom: 1rem;
+}
+
+/* Resource Cards */
+
+.resource-grid {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.resource-card {
+    flex: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 1.5rem;
+}
+
+.resource-card h3 {
+    color: #3172AE;
+    margin-bottom: 0.75rem;
+}
+
+.resource-card a {
+    color: #3172AE;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #3172AE;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 3rem;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 760px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resource-grid {
+        flex-direction: column;
+    }
+
+    .hero-photo img {
+        width: 180px;
+        height: 180px;
+    }
+}
